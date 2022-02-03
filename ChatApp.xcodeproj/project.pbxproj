@@ -14,6 +14,15 @@
 		EAD7269527AB057300658471 /* ChatAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7269427AB057300658471 /* ChatAppTests.swift */; };
 		EAD7269F27AB057300658471 /* ChatAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD7269E27AB057300658471 /* ChatAppUITests.swift */; };
 		EAD726A127AB057300658471 /* ChatAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD726A027AB057300658471 /* ChatAppUITestsLaunchTests.swift */; };
+		EAD726AF27AB06D600658471 /* TitleRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD726AE27AB06D600658471 /* TitleRow.swift */; };
+		EAD726B227AB0BDA00658471 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD726B127AB0BDA00658471 /* Message.swift */; };
+		EAD726B427AB0C6C00658471 /* MessageBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD726B327AB0C6C00658471 /* MessageBubble.swift */; };
+		EAD726B627AB10BA00658471 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD726B527AB10BA00658471 /* Extensions.swift */; };
+		EAD726B827AB114500658471 /* MessageField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD726B727AB114500658471 /* MessageField.swift */; };
+		EAD726BA27AB14E800658471 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = EAD726B927AB14E800658471 /* GoogleService-Info.plist */; };
+		EAD726BD27AB17E200658471 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = EAD726BC27AB17E200658471 /* FirebaseFirestore */; };
+		EAD726BF27AB17E200658471 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = EAD726BE27AB17E200658471 /* FirebaseFirestoreSwift-Beta */; };
+		EAD726C127AB1AE300658471 /* MessagesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAD726C027AB1AE300658471 /* MessagesManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +53,13 @@
 		EAD7269A27AB057300658471 /* ChatAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAD7269E27AB057300658471 /* ChatAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITests.swift; sourceTree = "<group>"; };
 		EAD726A027AB057300658471 /* ChatAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EAD726AE27AB06D600658471 /* TitleRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleRow.swift; sourceTree = "<group>"; };
+		EAD726B127AB0BDA00658471 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		EAD726B327AB0C6C00658471 /* MessageBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageBubble.swift; sourceTree = "<group>"; };
+		EAD726B527AB10BA00658471 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EAD726B727AB114500658471 /* MessageField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageField.swift; sourceTree = "<group>"; };
+		EAD726B927AB14E800658471 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		EAD726C027AB1AE300658471 /* MessagesManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +67,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EAD726BD27AB17E200658471 /* FirebaseFirestore in Frameworks */,
+				EAD726BF27AB17E200658471 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,8 +114,13 @@
 			children = (
 				EAD7268327AB057200658471 /* ChatAppApp.swift */,
 				EAD7268527AB057200658471 /* ContentView.swift */,
+				EAD726B927AB14E800658471 /* GoogleService-Info.plist */,
+				EAD726B027AB0BA800658471 /* Models */,
+				EAD726AD27AB06A800658471 /* Components */,
 				EAD7268727AB057200658471 /* Assets.xcassets */,
 				EAD7268927AB057200658471 /* Preview Content */,
+				EAD726B527AB10BA00658471 /* Extensions.swift */,
+				EAD726C027AB1AE300658471 /* MessagesManager.swift */,
 			);
 			path = ChatApp;
 			sourceTree = "<group>";
@@ -127,6 +150,24 @@
 			path = ChatAppUITests;
 			sourceTree = "<group>";
 		};
+		EAD726AD27AB06A800658471 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EAD726AE27AB06D600658471 /* TitleRow.swift */,
+				EAD726B327AB0C6C00658471 /* MessageBubble.swift */,
+				EAD726B727AB114500658471 /* MessageField.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EAD726B027AB0BA800658471 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EAD726B127AB0BDA00658471 /* Message.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -143,6 +184,10 @@
 			dependencies = (
 			);
 			name = ChatApp;
+			packageProductDependencies = (
+				EAD726BC27AB17E200658471 /* FirebaseFirestore */,
+				EAD726BE27AB17E200658471 /* FirebaseFirestoreSwift-Beta */,
+			);
 			productName = ChatApp;
 			productReference = EAD7268027AB057200658471 /* ChatApp.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +260,9 @@
 				Base,
 			);
 			mainGroup = EAD7267727AB057200658471;
+			packageReferences = (
+				EAD726BB27AB17E200658471 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = EAD7268127AB057200658471 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -232,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD7268B27AB057200658471 /* Preview Assets.xcassets in Resources */,
+				EAD726BA27AB14E800658471 /* GoogleService-Info.plist in Resources */,
 				EAD7268827AB057200658471 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,7 +307,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAD7268627AB057200658471 /* ContentView.swift in Sources */,
+				EAD726B627AB10BA00658471 /* Extensions.swift in Sources */,
+				EAD726B227AB0BDA00658471 /* Message.swift in Sources */,
+				EAD726C127AB1AE300658471 /* MessagesManager.swift in Sources */,
+				EAD726B827AB114500658471 /* MessageField.swift in Sources */,
+				EAD726B427AB0C6C00658471 /* MessageBubble.swift in Sources */,
 				EAD7268427AB057200658471 /* ChatAppApp.swift in Sources */,
+				EAD726AF27AB06D600658471 /* TitleRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -585,6 +640,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		EAD726BB27AB17E200658471 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EAD726BC27AB17E200658471 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAD726BB27AB17E200658471 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		EAD726BE27AB17E200658471 /* FirebaseFirestoreSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = EAD726BB27AB17E200658471 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseFirestoreSwift-Beta";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = EAD7267827AB057200658471 /* Project object */;
 }
